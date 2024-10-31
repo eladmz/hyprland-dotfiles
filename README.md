@@ -1,6 +1,6 @@
 ### pacman packages
 ```
-sudo pacman -Sy wofi waybar ttf-font-awesome git neovim
+pacman -S --needed - < pacman-packages.txt
 ```
 
 ### yay installation
