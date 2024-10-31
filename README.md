@@ -10,6 +10,11 @@ makepkg -si
 yay -S --needed - < yay-packages.txt
 ```
 
+### change default shell
+```
+chsh -s $(which zsh)
+```
+
 ### git setup
 ```
 git config --global user.email "YOUR_EMAIL"

@@ -23,7 +23,6 @@ skaffold
 starship
 stow
 swaync
-tmux
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
 unzip
@@ -32,3 +31,4 @@ waybar
 wofi
 xclip
 zoxide
+zsh
