@@ -1,8 +1,3 @@
-### pacman packages
-```
-pacman -S --needed - < pacman-packages.txt
-```
-
 ### yay installation
 ```
 git clone https://aur.archlinux.org/yay-git.git
@@ -12,7 +7,7 @@ makepkg -si
 
 ### yay packages
 ```
-yay -Sy google-chrome visual-studio-code-bin
+yay -S --needed - < yay-packages.txt
 ```
 
 ### git setup
@@ -21,4 +16,15 @@ git config --global user.email "YOUR_EMAIL"
 git config --global user.name "YOUR_NAME"
 
 gh auth login
+```
+
+### remove dunst notification center
+```
+sudo pacman -Rcns dunst
+killall dunst
+```
+
+### stow
+```
+stow -t ~/ PACKAGE_NAME
 ```
