@@ -14,3 +14,11 @@ makepkg -si
 ```
 yay -Sy google-chrome visual-studio-code-bin
 ```
+
+### git setup
+```
+git config --global user.email "YOUR_EMAIL"
+git config --global user.name "YOUR_NAME"
+
+gh auth login
+```
