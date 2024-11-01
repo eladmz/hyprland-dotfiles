@@ -2,39 +2,49 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "battery", "clock"],
-  "clock": {
-    "format": "<span foreground='#f5c2e7'>   </span>{:%d/%m/%y %H:%M}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  "modules-right": ["pulseaudio", "network", "cpu", "memory", "clock", "custom/space", "custom/lock", "custom/sleep", "custom/power"],
+  "hyprland/workspaces": {
+     "format": "  "
   },
-  "battery": {
-    "states": {
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
-    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-icons": ["", "", "", "", ""],
-    "tooltip-format": "{time}"
+  "clock": {
+    "format": "  {:%H:%M}",
+    "tooltip-format": "<big>{:%d/%m/%Y}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "network": {
-    "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
-    "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
-    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+    "format-wifi": "  {signalStrength}%",
+    "format-disconnected": " Disconnected",
+    "tooltip-format-wifi": "{essid}"
   },
   "pulseaudio": {
-      "format": "{icon}  {volume}%",
-      "format-muted": "",
-      "format-icons": {
-          "default": ["", "", " "]
-      },
-      "on-click": "pavucontrol"
+    "format": "{icon}  {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", ""]
+    }
+  },
+  "cpu": {
+    "format":"  {usage}%"
+  },
+  "memory": {
+    "format":"  {percentage}%"
+  },
+  "custom/space": {
+    "tooltip": false,
+    "format": "|"
+  },
+  "custom/lock": {
+    "tooltip": false,
+    "on-click": "hyprlock",
+    "format": ""
+  },
+  "custom/sleep": {
+    "tooltip": false,
+    "on-click": "systemctl suspend",
+    "format": "󰤄"
+  },
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "shutdown now",
+    "format": ""
   }
 }
