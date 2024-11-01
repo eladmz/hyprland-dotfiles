@@ -47,6 +47,7 @@ button:hover {
 #pulseaudio,
 #clock,
 #battery,
+#bluetooth,
 #cpu,
 #memory,
 #disk,
@@ -59,6 +60,7 @@ button:hover {
 #scratchpad,
 #custom-space,
 #custom-lock,
+#custom-logout,
 #custom-sleep,
 #custom-restart,
 #custom-power {
@@ -70,16 +72,20 @@ button:hover {
     color: @lavender;
 }
 
+#bluetooth {
+    color: @sapphire;
+}
+
 #cpu {
-    color: @yellow;
+    color: @pink;
 }
 
 #memory {
-    color: @green;
+    color: @rosewater;
 }
 
 #pulseaudio {
-    color: @maroon;
+    color: @red;
 }
 
 #network {
@@ -106,6 +112,12 @@ button:hover {
     margin-left: 16px;
 }
 
+#custom-logout {
+    color: @text;
+    font-size: 20px;
+    margin-left: 12px;
+}
+
 #custom-sleep {
     color: @text;
     font-size: 22px;
@@ -127,6 +139,7 @@ button:hover {
 }
 
 #custom-lock:hover,
+#custom-logout:hover,
 #custom-sleep:hover,
 #custom-restart:hover,
 #custom-power:hover {

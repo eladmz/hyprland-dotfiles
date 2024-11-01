@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["pulseaudio", "network", "cpu", "memory", "clock", "custom/space", "custom/lock", "custom/sleep", "custom/restart", "custom/power"],
+  "modules-right": ["pulseaudio", "network", "bluetooth", "custom/space", "cpu", "memory", "clock", "custom/space", "custom/lock", "custom/logout", "custom/sleep", "custom/restart", "custom/power"],
   "hyprland/workspaces": {
      "format": " {icon} ",
      "format-icons": {
@@ -28,6 +28,11 @@
     },
     "on-click": "pavucontrol"
   },
+  "bluetooth": {
+    "format": " {num_connections}",
+    "tooltip-format": "{device_alias}",
+    "on-click": "blueman-manager"
+  },
   "cpu": {
     "format":"  {usage}%"
   },
@@ -44,6 +49,11 @@
     "on-click": "hyprlock",
     "format": ""
   },
+  "custom/logout": {
+    "tooltip-format": "Logout",
+    "on-click": "hyprctl dispatch exit",
+    "format": "󰍃"
+  },
   "custom/sleep": {
     "tooltip-format": "Sleep",
     "on-click": "systemctl suspend",
@@ -51,12 +61,12 @@
   },
   "custom/restart": {
     "tooltip-format": "Restart",
-    "on-click": "reboot now",
+    "on-click": "systemctl reboot",
     "format": "󰜉"
   },
   "custom/power": {
     "tooltip-format": "Shutdown",
-    "on-click": "shutdown now",
+    "on-click": "systemctl poweroff",
     "format": ""
   }
 }

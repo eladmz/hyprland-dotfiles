@@ -33,3 +33,9 @@ killall dunst
 ```
 stow -t ~/ PACKAGE_NAME
 ```
+
+### bluetooth
+```
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
+```

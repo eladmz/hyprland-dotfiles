@@ -1,4 +1,7 @@
 bat
+blueman
+bluez
+bluez-utils
 docker
 eza
 fd
@@ -15,6 +18,7 @@ hyprshot
 k9s
 kubectl
 lazygit
+linux-headers
 minikube
 neovim
 nvm
@@ -29,6 +33,7 @@ ttf-jetbrains-mono-nerd
 unzip
 visual-studio-code-bin
 waybar
+xpadneo-dkms
 wofi
 xclip
 zoxide
