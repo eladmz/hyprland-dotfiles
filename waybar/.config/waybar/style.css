@@ -36,23 +36,12 @@ button:hover {
 
 #workspaces button {
     color: @lavender;
-    padding: 0 8px;
-}
-
-#workspaces button.focused {
-    color: @sky;
+    /* padding: 0 8px; */
 }
 
 #workspaces button.active {
     color: @sky;
-}
-
-#workspaces button.hover {
-    color: @lavender;
-}
-
-#workspaces button.urgent {
-    background-color: #eb4d4b;
+    font-size: 16px;
 }
 
 #pulseaudio,
@@ -71,6 +60,7 @@ button:hover {
 #custom-space,
 #custom-lock,
 #custom-sleep,
+#custom-restart,
 #custom-power {
   margin: 2px 16px;
   padding: 0 4px;
@@ -118,13 +108,27 @@ button:hover {
 
 #custom-sleep {
     color: @text;
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 8px;
+}
+
+#custom-restart {
+    font-size: 22px;
+    color: @text;
+    margin-left: 4px;
+    margin-right: 24px;
 }
 
 #custom-power {
     font-size: 16px;
     color: @text;
-    margin-left: 4px;
+    margin-left: 0px;
     margin-right: 24px;
+}
+
+#custom-lock:hover,
+#custom-sleep:hover,
+#custom-restart:hover,
+#custom-power:hover {
+    color: @mauve;
 }

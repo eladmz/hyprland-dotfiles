@@ -2,48 +2,60 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["pulseaudio", "network", "cpu", "memory", "clock", "custom/space", "custom/lock", "custom/sleep", "custom/power"],
+  "modules-right": ["pulseaudio", "network", "cpu", "memory", "clock", "custom/space", "custom/lock", "custom/sleep", "custom/restart", "custom/power"],
   "hyprland/workspaces": {
-     "format": "  "
+     "format": " {icon} ",
+     "format-icons": {
+        "default": "",
+        "active": ""
+     }
   },
   "clock": {
     "format": "  {:%H:%M}",
-    "tooltip-format": "<big>{:%d/%m/%Y}</big>\n<tt><small>{calendar}</small></tt>"
+    "tooltip-format": "<big>{:%d/%m/%Y}</big>\n\n<tt><big>{calendar}</big></tt>"
   },
   "network": {
     "format-wifi": "  {signalStrength}%",
     "format-disconnected": " Disconnected",
-    "tooltip-format-wifi": "{essid}"
+    "tooltip-format-wifi": "{essid}",
+    "on-click": "nm-connection-editor"
   },
   "pulseaudio": {
     "format": "{icon}  {volume}%",
     "format-muted": "",
     "format-icons": {
       "default": ["", "", ""]
-    }
+    },
+    "on-click": "pavucontrol"
   },
   "cpu": {
     "format":"  {usage}%"
   },
   "memory": {
-    "format":"  {percentage}%"
+    "format":"  {percentage}%",
+    "tooltip-format": "{used:0.1f}GB / {total:0.1f}GB"
   },
   "custom/space": {
     "tooltip": false,
     "format": "|"
   },
   "custom/lock": {
-    "tooltip": false,
+    "tooltip-format": "Lock",
     "on-click": "hyprlock",
     "format": ""
   },
   "custom/sleep": {
-    "tooltip": false,
+    "tooltip-format": "Sleep",
     "on-click": "systemctl suspend",
     "format": "󰤄"
   },
+  "custom/restart": {
+    "tooltip-format": "Restart",
+    "on-click": "reboot now",
+    "format": "󰜉"
+  },
   "custom/power": {
-    "tooltip": false,
+    "tooltip-format": "Shutdown",
     "on-click": "shutdown now",
     "format": ""
   }
