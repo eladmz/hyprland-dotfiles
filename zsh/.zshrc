@@ -23,6 +23,8 @@ bindkey '^w' vi-forward-word
 bindkey '^b' vi-backward-word
 bindkey '^k' up-line-or-search
 bindkey '^j' down-line-or-search
+bindkey '^[[H' beginning-of-line # finx home key
+bindkey '^[[F' end-of-line # fix end key
 bindkey '^[[3~' delete-char # fix delete key
 
 # fzf config
