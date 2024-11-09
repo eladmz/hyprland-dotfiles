@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["pulseaudio", "network", "bluetooth", "custom/space", "cpu", "memory", "clock", "custom/space", "custom/lock", "custom/logout", "custom/sleep", "custom/restart", "custom/power"],
+  "modules-right": ["pulseaudio", "network", "bluetooth", "hyprland/language", "custom/space", "cpu", "memory", "clock", "custom/space", "custom/lock", "custom/logout", "custom/sleep", "custom/restart", "custom/power"],
   "hyprland/workspaces": {
      "format": " {icon} ",
      "format-icons": {
@@ -32,6 +32,12 @@
     "format": " {num_connections}",
     "tooltip-format": "{device_alias}",
     "on-click": "blueman-manager"
+  },
+  "hyprland/language": {
+    "format":"  {}",
+    "format-en": "EN",
+    "format-he": "HE",
+    "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
   },
   "cpu": {
     "format":"  {usage}%"

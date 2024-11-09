@@ -44,6 +44,7 @@ button:hover {
     font-size: 16px;
 }
 
+#language,
 #pulseaudio,
 #clock,
 #battery,
@@ -66,6 +67,10 @@ button:hover {
 #custom-power {
   margin: 2px 16px;
   padding: 0 4px;
+}
+
+#language {
+    color: @subtext1;
 }
 
 #clock {
