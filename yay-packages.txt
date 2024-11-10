@@ -1,4 +1,5 @@
 bat
+bitwarden
 blueman
 bluez
 bluez-utils
