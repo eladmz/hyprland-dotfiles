@@ -2,6 +2,7 @@ bat
 blueman
 bluez
 bluez-utils
+discord
 docker
 eza
 fd
@@ -26,8 +27,10 @@ pavucontrol
 ripgrep
 skaffold
 starship
+steam
 stow
 swaync
+telegram-desktop
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
 unzip
