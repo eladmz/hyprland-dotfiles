@@ -20,6 +20,7 @@ hyprshot
 k9s
 kubectl
 lazygit
+less
 linux-headers
 minikube
 neovim

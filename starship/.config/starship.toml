@@ -1,4 +1,4 @@
-palette = "catppuccin_macchiato"
+palette = "catppuccin_mocha"
 command_timeout = 1000
 
 [aws]

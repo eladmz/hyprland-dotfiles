@@ -23,7 +23,7 @@ bindkey '^w' vi-forward-word
 bindkey '^b' vi-backward-word
 bindkey '^k' up-line-or-search
 bindkey '^j' down-line-or-search
-bindkey '^[[H' beginning-of-line # finx home key
+bindkey '^[[H' beginning-of-line # fix home key
 bindkey '^[[F' end-of-line # fix end key
 bindkey '^[[3~' delete-char # fix delete key
 
@@ -79,18 +79,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 alias k="kubectl"
-alias pods="kubectl get pods -A"
-alias svc="kubectl get services -A"
-alias ingress="kubectl get secrets -A"
-alias kctx="kubectl config use-context"
-alias kconf="kubectl config get-contexts -o name"
 
 alias ls="eza --icons=always"
 alias l="eza -l --icons --git -a"
+alias ll="eza -l --icons --git -a"
 alias lt="eza --tree --level=2 --long --icons --git"
 
 alias cl="clear"
-alias v="nvim"
 alias cd="z"
 alias cdi="zi"
 
