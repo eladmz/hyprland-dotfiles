@@ -7,22 +7,46 @@
 // from the command palette.
 [
   {
-    "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
+      "ctrl-shift-o": "projects::OpenRecent"
     }
   },
   {
-    "context": "Editor",
+    "context": "Workspace",
     "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "ctrl-shift-y": "workspace::ToggleLeftDock",
+      "ctrl-shift-h": "workspace::ToggleBottomDock",
+      "ctrl-shift-e": "pane::RevealInProjectPanel",
+      "ctrl-shift-b": "outline_panel::ToggleFocus",
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-shift-p": "command_palette::Toggle",
+      "ctrl-n": "workspace::NewFile",
+      "ctrl-shift-n": "workspace::NewWindow",
+      "ctrl-shift-f": "pane::DeploySearch",
+      "ctrl-shift-g": ["pane::DeploySearch", { "replace_enabled": true }],
+      "ctrl-t": "project_symbols::Toggle",
+      "ctrl-shift-m": "diagnostics::Deploy",
+      "ctrl-?": "assistant::ToggleFocus",
+      "ctrl-shift-x": "zed::Extensions"
     }
   },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "r": "project_panel::Rename",
+      "p": "project_panel::Paste",
+      "d": "project_panel::Cut",
+      "x": "project_panel::Delete"
+    }
+  },
+
   {
     "context": "VimControl && !menu",
     "bindings": {
       "L": "pane::ActivateNextItem",
-      "H": "pane::ActivatePrevItem"
+      "H": "pane::ActivatePrevItem",
+      "g ?": "assistant::InlineAssist"
     }
   }
 ]
