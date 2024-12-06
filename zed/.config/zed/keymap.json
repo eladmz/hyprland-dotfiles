@@ -8,14 +8,7 @@
 [
   {
     "bindings": {
-      "ctrl-shift-o": "projects::OpenRecent"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-shift-y": "workspace::ToggleLeftDock",
-      "ctrl-shift-h": "workspace::ToggleBottomDock",
+      "ctrl-shift-o": "projects::OpenRecent",
       "ctrl-shift-e": "pane::RevealInProjectPanel",
       "ctrl-shift-b": "outline_panel::ToggleFocus",
       "ctrl-p": "file_finder::Toggle",
@@ -24,7 +17,14 @@
       "ctrl-shift-n": "workspace::NewWindow",
       "ctrl-shift-f": "pane::DeploySearch",
       "ctrl-shift-g": ["pane::DeploySearch", { "replace_enabled": true }],
-      "ctrl-t": "project_symbols::Toggle",
+      "ctrl-t": "project_symbols::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-y": "workspace::ToggleLeftDock",
+      "ctrl-shift-h": "workspace::ToggleBottomDock",
       "ctrl-shift-m": "diagnostics::Deploy",
       "ctrl-?": "assistant::ToggleFocus",
       "ctrl-shift-x": "zed::Extensions"
