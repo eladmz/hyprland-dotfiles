@@ -79,6 +79,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 alias k="kubectl"
+alias kctx="kubectl config use-context"
 
 alias ls="eza --icons=always"
 alias l="eza -l --icons --git -a"
@@ -96,6 +97,7 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
 alias lg="lazygit"
+alias gs="git status"
 alias gd="git diff"
 alias gdt="git difftool"
 
