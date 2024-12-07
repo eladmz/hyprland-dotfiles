@@ -22,7 +22,7 @@ symbol = " "
 disabled = false
 added_style = 'italic dimmed green'
 deleted_style = 'italic dimmed maroon'
-format = '\[([+$added]($added_style) )([-$deleted]($deleted_style))\] '
+format = '(\[[+$added]($added_style) )([-$deleted]($deleted_style)\] )'
 
 [git_state]
 disabled = true
