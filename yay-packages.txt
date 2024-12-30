@@ -8,6 +8,7 @@ docker
 eza
 fd
 fzf
+ghostty
 git
 github-cli
 google-chrome
@@ -25,6 +26,7 @@ linux-headers
 minikube
 neovim
 nvm
+pacman-contrib
 pavucontrol
 ripgrep
 skaffold
@@ -41,5 +43,6 @@ waybar
 xpadneo-dkms
 wofi
 xclip
+zed
 zoxide
 zsh
